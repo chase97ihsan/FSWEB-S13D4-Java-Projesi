@@ -1,6 +1,8 @@
-package com.workintech.project;
+package com.workintech.main;
 
+import com.workintech.model.Player;
 import com.workintech.model.Point;
+import com.workintech.model.Weapon;
 
 public class Main {
     public static void main(String[] args) {
@@ -17,6 +19,14 @@ public class Main {
         Point point = new Point(0,0);
 
         System.out.println("distance()= " + point.distance());
+        System.out.println("----------------------------");
+        Player p1=new Player("İhsan",500, Weapon.BIXI);
+        System.out.println(p1);
+         p1.loseHealth(400);
+        System.out.println(p1);
+        p1.restoreHealth(400);
+        System.out.println(p1);
+
 
 
     }
